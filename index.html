@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SultaanFilms - Broadcasting & Media Production</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #2d2d2d;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff6b6b;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            background: #fff;
+            margin: 2rem auto;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #1a1a1a;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #ff6b6b;
+            padding-bottom: 0.5rem;
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-title {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .contact-item h3 {
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #1a1a1a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #ff6b6b;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SultaanFilms</h1>
+        <p>Broadcasting & Media Production Company</p>
+        <p>Independent Film Production | Filming | Advertising | Music Videos | Series | Short Films & Features</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#music-videos">Music Videos</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="#short-movies">Short Movies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About SultaanFilms</h2>
+            <p>Welcome to SultaanFilms, your premier destination for professional broadcasting and media production services. We are an independent film production company specializing in creating compelling visual content that resonates with audiences worldwide.</p>
+            <p style="margin-top: 1rem;">Our expertise spans across various domains including filming, advertising, music videos, series production, short films, and feature-length productions. With a dedicated team of creative professionals, we bring your vision to life with cutting-edge technology and artistic excellence.</p>
+            <p style="margin-top: 1rem;">At SultaanFilms, we believe in the power of storytelling and the impact of high-quality visual media. Whether you're looking for commercial advertising, music video production, or full-scale film projects, we deliver exceptional results that exceed expectations.</p>
+        </section>
+        
+        <section id="music-videos">
+            <h2>Music Videos</h2>
+            <p>Explore our collection of professionally produced music videos showcasing diverse artists and creative styles.</p>
+            <div class="video-grid">
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Featured Music Video 1</p>
+                </div>
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Featured Music Video 2</p>
+                </div>
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Featured Music Video 3</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="podcasts">
+            <h2>Podcasts</h2>
+            <p>Stay tuned for our engaging podcast series featuring industry insights, interviews, and behind-the-scenes content.</p>
+            <div class="video-grid">
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Podcast Episode 1</p>
+                </div>
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Podcast Episode 2</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="short-movies">
+            <h2>Short Movies</h2>
+            <p>Discover our award-winning short films that tell powerful stories in compact formats.</p>
+            <div class="video-grid">
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Short Film 1</p>
+                </div>
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Short Film 2</p>
+                </div>
+                <div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-title">Short Film 3</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for collaborations, bookings, or inquiries.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@sultaanfilms.me</p>
+                    <p>contact@sultaanfilms.me</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+252 61 234 5678</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Mogadishu, Somalia</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem; color: #1a1a1a;">Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@sultaanfilms" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/sultaanfilms" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/sultaanfilms" target="_blank">Facebook</a>
+                <a href="https://twitter.com/sultaanfilms" target="_blank">Twitter</a>
+                <a href="https://www.tiktok.com/@sultaanfilms" target="_blank">TikTok</a>
+                <a href="https://www.linkedin.com/company/sultaanfilms" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 SultaanFilms. All rights reserved.</p>
+        <p>Broadcasting & Media Production Company</p>
+    </footer>
+</body>
+</html>
