@@ -86,6 +86,23 @@
             padding-bottom: 0.5rem;
         }
         
+        section h3 {
+            color: #1a1a1a;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        section h3 a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        section h3 a:hover {
+            color: #ff6b6b;
+        }
+        
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -117,6 +134,10 @@
             color: #1a1a1a;
         }
         
+        .video-item {
+            margin-bottom: 3rem;
+        }
+        
         .contact-info {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -133,7 +154,7 @@
         
         .contact-item h3 {
             color: #1a1a1a;
-            margin-bottom: 0.5rem;
+            margin: 0 0 0.5rem 0;
         }
         
         .social-links {
@@ -185,7 +206,7 @@
     <header>
         <h1>SultaanFilms</h1>
         <p>Broadcasting & Media Production Company</p>
-        <p>Independent Film Production | Filming | Advertising | Music Videos | Series | Short Films & Features</p>
+        <p>Independent Film Production | Filming | Advertising | Programs | Music Videos | Series | Shorts & Features</p>
     </header>
     
     <nav>
@@ -201,9 +222,7 @@
     <div class="container">
         <section id="about">
             <h2>About SultaanFilms</h2>
-            <p>Welcome to SultaanFilms, your premier destination for professional broadcasting and media production services. We are an independent film production company specializing in creating compelling visual content that resonates with audiences worldwide.</p>
-            <p style="margin-top: 1rem;">Our expertise spans across various domains including filming, advertising, music videos, series production, short films, and feature-length productions. With a dedicated team of creative professionals, we bring your vision to life with cutting-edge technology and artistic excellence.</p>
-            <p style="margin-top: 1rem;">At SultaanFilms, we believe in the power of storytelling and the impact of high-quality visual media. Whether you're looking for commercial advertising, music video production, or full-scale film projects, we deliver exceptional results that exceed expectations.</p>
+            <p>SultaanFilms is a Broadcasting & Media Production Company based in Cairo, Egypt, offering Independent Film Production, Filming, Advertising, Programs, Music Videos, Series, Shorts & Features. Our services include filmmaking, videography, podcast production, wedding photography, and professional videography & photography. We are passionate about storytelling through visual art!</p>
         </section>
         
         <section id="music-videos">
@@ -214,19 +233,19 @@
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <p class="video-title">Featured Music Video 1</p>
+                    <p class="video-title">Artist Name - Song Title 1</p>
                 </div>
                 <div>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <p class="video-title">Featured Music Video 2</p>
+                    <p class="video-title">Artist Name - Song Title 2</p>
                 </div>
                 <div>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <p class="video-title">Featured Music Video 3</p>
+                    <p class="video-title">Artist Name - Song Title 3</p>
                 </div>
             </div>
         </section>
@@ -234,18 +253,25 @@
         <section id="podcasts">
             <h2>Podcasts</h2>
             <p>Stay tuned for our engaging podcast series featuring industry insights, interviews, and behind-the-scenes content.</p>
-            <div class="video-grid">
-                <div>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-                    </div>
-                    <p class="video-title">Podcast Episode 1</p>
+            
+            <div class="video-item">
+                <h3><a href="https://www.youtube.com/@sultaanfilms" target="_blank">SULTAN Podcast</a></h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
-                <div>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-                    </div>
-                    <p class="video-title">Podcast Episode 2</p>
+            </div>
+            
+            <div class="video-item">
+                <h3><a href="https://www.youtube.com/@sultaanfilms" target="_blank">Goray Podcast</a></h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="video-item">
+                <h3><a href="https://www.youtube.com/@sultaanfilms" target="_blank">ADNAN & SIRKA PODCAST</a></h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -258,19 +284,19 @@
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <p class="video-title">Short Film 1</p>
+                    <p class="video-title">Short Film Title 1</p>
                 </div>
                 <div>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <p class="video-title">Short Film 2</p>
+                    <p class="video-title">Short Film Title 2</p>
                 </div>
                 <div>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <p class="video-title">Short Film 3</p>
+                    <p class="video-title">Short Film Title 3</p>
                 </div>
             </div>
         </section>
@@ -286,22 +312,19 @@
                 </div>
                 <div class="contact-item">
                     <h3>Phone</h3>
-                    <p>+252 61 234 5678</p>
+                    <p>+201014338677</p>
                 </div>
                 <div class="contact-item">
                     <h3>Location</h3>
-                    <p>Mogadishu, Somalia</p>
+                    <p>Cairo, Egypt</p>
                 </div>
             </div>
             
             <h3 style="margin-top: 2rem; color: #1a1a1a;">Follow Us</h3>
             <div class="social-links">
-                <a href="https://www.youtube.com/@sultaanfilms" target="_blank">YouTube</a>
-                <a href="https://www.instagram.com/sultaanfilms" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/sultaanfilms" target="_blank">Facebook</a>
-                <a href="https://twitter.com/sultaanfilms" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/ibraahimcm" target="_blank">Instagram</a>
                 <a href="https://www.tiktok.com/@sultaanfilms" target="_blank">TikTok</a>
-                <a href="https://www.linkedin.com/company/sultaanfilms" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/icm70" target="_blank">Facebook</a>
             </div>
         </section>
     </div>
